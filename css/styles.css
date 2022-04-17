@@ -1,88 +1,99 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;800;900&family=Roboto:ital,wght@0,100;0,300;0,900;1,500&display=swap");
-* {
-  margin: 0;
-  padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&display=swap");
+.navbar {
+  border-bottom: 2px solid #000;
+}
+.navbar .container-fluid img {
+  width: 50px;
 }
 
-#navbar {
-  border-bottom: 1px solid #000;
+.hero .presentacion {
+  border-bottom: 2px solid #000;
 }
-#navbar #navbar-container #nav-links {
-  color: #000;
-  font-family: "Roboto", sans-serif;
-}
-#navbar #navbar-container #navbar-title {
-  color: #000;
-  font-weight: 700;
-  font-family: "Roboto", sans-serif;
-}
-
-.hero {
-  border-bottom: 1px solid #000;
-}
-.hero h1 {
-  text-align: center;
-  padding-top: 15px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-}
-.hero .hero-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+.hero .presentacion img {
   width: 100%;
-  justify-content: space-around;
 }
-.hero .hero-container .card {
-  width: 200px;
+.hero h3 {
+  font-size: 2em;
+  text-align: center;
   margin: 10px;
-  border: 3px solid #000;
 }
-.hero .hero-container .card img {
-  width: auto;
-}
-.hero .hero-container .card h5 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 800;
+.hero body {
   text-align: center;
-  padding: 5px 0px 0px 0px;
+  padding: 30px;
+  background: #f8f4f2;
+  font-family: Arial;
 }
-.hero .hero-container .card p {
-  font-family: "Monserrat", sans-serif;
-  font-size: 13px;
-  text-align: justify;
-  margin: 0px 10px 5px 10px;
-}
-.hero .hero-container .card a {
+.hero .a-box {
+  display: inline-block;
+  width: 240px;
   text-align: center;
-  margin-bottom: 5px;
 }
-.hero .hero-container .card a button {
-  padding: 5px;
-  background-color: #cc0000;
-  color: #f2f2f2;
-  font-weight: 500;
-  border: 3px solid #000;
+.hero .img-container {
+  height: 230px;
+  width: 200px;
+  overflow: hidden;
+  border-radius: 0px 0px 20px 20px;
+  display: inline-block;
+}
+.hero .img-container img {
+  transform: skew(0deg, -13deg);
+  height: 250px;
+  margin: -35px 0px 0px -70px;
+}
+.hero .inner-skew {
+  display: inline-block;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 0px;
+  transform: skew(0deg, 13deg);
+  font-size: 0px;
+  margin: 30px 0px 0px 0px;
+  background: #c8c2c2;
+  height: 250px;
+  width: 200px;
+}
+.hero .text-container {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  padding: 120px 20px 20px 20px;
+  border-radius: 20px;
+  background: #fff;
+  margin: -120px 0px 0px 0px;
+  line-height: 19px;
+  font-size: 14px;
+}
+.hero .text-container h3 {
+  margin: 20px 0px 10px 0px;
+  color: #04bcff;
+  font-size: 18px;
 }
 
+.footer {
+  border-top: 1px solid #000;
+}
 .footer .footer-container .contact-us {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .footer .footer-container .contact-us h3 {
-  font-family: "Roboto", sans-serif;
-  font-size: 10px;
+  font-size: 16px;
   margin: 0px 0px 3px 0px;
 }
 .footer .footer-container .social-icons {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding-top: 10px;
 }
 .footer .footer-container .social-icons a {
   color: #000;
   margin-right: 5px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Akshar", sans-serif;
 }
 
 /*# sourceMappingURL=styles.css.map */
