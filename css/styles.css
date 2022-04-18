@@ -5,6 +5,9 @@
 .navbar .container-fluid img {
   width: 50px;
 }
+.navbar #nav-link {
+  color: #000;
+}
 
 .hero .presentacion {
   border-bottom: 2px solid #000;
@@ -23,24 +26,38 @@
   background: #f8f4f2;
   font-family: Arial;
 }
-.hero .a-box {
-  display: inline-block;
+.hero .card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.hero .card .a-box {
   width: 240px;
   text-align: center;
 }
-.hero .img-container {
+.hero .card .a-box .text-container {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  padding: 120px 20px 20px 20px;
+  border-radius: 20px;
+  background: #fff;
+  margin: -120px 0px 0px 0px;
+  line-height: 19px;
+  font-size: 14px;
+}
+.hero .card .a-box .text-container h3 {
+  margin: 20px 0px 10px 0px;
+  color: #04bcff;
+  font-size: 18px;
+}
+.hero .card .a-box .img-container {
   height: 230px;
   width: 200px;
   overflow: hidden;
   border-radius: 0px 0px 20px 20px;
   display: inline-block;
 }
-.hero .img-container img {
-  transform: skew(0deg, -13deg);
-  height: 250px;
-  margin: -35px 0px 0px -70px;
-}
-.hero .inner-skew {
+.hero .card .a-box .img-container .img-inner .inner-skew {
   display: inline-block;
   border-radius: 20px;
   overflow: hidden;
@@ -52,19 +69,10 @@
   height: 250px;
   width: 200px;
 }
-.hero .text-container {
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
-  padding: 120px 20px 20px 20px;
-  border-radius: 20px;
-  background: #fff;
-  margin: -120px 0px 0px 0px;
-  line-height: 19px;
-  font-size: 14px;
-}
-.hero .text-container h3 {
-  margin: 20px 0px 10px 0px;
-  color: #04bcff;
-  font-size: 18px;
+.hero .card .a-box .img-container .img-inner img {
+  transform: skew(0deg, -13deg);
+  height: 250px;
+  margin: -33px 0px 0px -29px;
 }
 
 .footer {
